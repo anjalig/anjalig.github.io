@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[DECRYPTING IDEAS]]></title>
   <link href="http://anjalig.github.io/atom.xml" rel="self"/>
   <link href="http://anjalig.github.io/"/>
-  <updated>2013-06-19T21:17:04+05:30</updated>
+  <updated>2013-06-19T21:44:54+05:30</updated>
   <id>http://anjalig.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Steganography]]></title>
+    <link href="http://anjalig.github.io/blog/2013/06/19/steganography/"/>
+    <updated>2013-06-19T21:42:00+05:30</updated>
+    <id>http://anjalig.github.io/blog/2013/06/19/steganography</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
 </feed>
