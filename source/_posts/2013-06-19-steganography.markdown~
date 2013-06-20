@@ -5,3 +5,5 @@ date: 2013-06-19 21:42
 comments: true
 categories: 
 ---
+
+{% img /home/anjali/octopress/source/images/images.jpeg %}

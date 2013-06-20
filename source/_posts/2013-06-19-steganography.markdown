@@ -6,4 +6,4 @@ comments: true
 categories: 
 ---
 
-{% img /home/anjali/octopress/source/images/images.jpeg %}
+{% img /images/images.jpeg %}
