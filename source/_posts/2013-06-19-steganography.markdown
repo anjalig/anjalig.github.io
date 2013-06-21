@@ -13,8 +13,8 @@ apart from the sender and intended recipient suspects the existence of the messa
 Example of Steganography we are going to try is 'Hidding a folder behind an image'.
 Follow the steps below and you will learn a technique of steganography:
 
-     Create a folder containing all your secret files in it.
-        Here, the following things are needed :-
+1. Create a folder containing all your secret files in it.
+2. Here, the following things are needed :-
 	-A folder containing all your secret files: here, 'hide' is the folder .
 	-An image to hide the folder: here, image.jpg is the image used. 
 3. Create a zip archive of the folder. In linux use the following to zip a folder :
