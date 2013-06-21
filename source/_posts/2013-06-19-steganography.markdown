@@ -5,7 +5,8 @@ date: 2013-06-19 21:42
 comments: true
 categories: 
 ---
-
+{%blockquote Hidding Folder Behind an Image %}
+{%endblockquote %}
 {% img https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkZlLGh1eMQTQwZ9dvr0zGRtOk6pMYhxmuuy11TkK_y9EwryBN %}
 
 Steganography is the art and science of writing hiden messages in such a way that no one, 
