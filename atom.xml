@@ -4,7 +4,7 @@
   <title><![CDATA[DECRYPTING IDEAS]]></title>
   <link href="http://anjalig.github.io/atom.xml" rel="self"/>
   <link href="http://anjalig.github.io/"/>
-  <updated>2013-06-21T14:01:01+05:30</updated>
+  <updated>2013-06-21T14:12:26+05:30</updated>
   <id>http://anjalig.github.io/</id>
   <author>
     <name><![CDATA[Anjali]]></name>
@@ -18,7 +18,10 @@
     <link href="http://anjalig.github.io/blog/2013/06/19/steganography/"/>
     <updated>2013-06-19T21:42:00+05:30</updated>
     <id>http://anjalig.github.io/blog/2013/06/19/steganography</id>
-    <content type="html"><![CDATA[<p><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkZlLGh1eMQTQwZ9dvr0zGRtOk6pMYhxmuuy11TkK_y9EwryBN"></p>
+    <content type="html"><![CDATA[<blockquote><p></p><footer><strong>Hidding Folder Behind an Image</strong></footer></blockquote>
+
+
+<p><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkZlLGh1eMQTQwZ9dvr0zGRtOk6pMYhxmuuy11TkK_y9EwryBN"></p>
 
 <p>Steganography is the art and science of writing hiden messages in such a way that no one,
 apart from the sender and intended recipient suspects the existence of the message.
