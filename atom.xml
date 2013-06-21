@@ -4,7 +4,7 @@
   <title><![CDATA[DECRYPTING IDEAS]]></title>
   <link href="http://anjalig.github.io/atom.xml" rel="self"/>
   <link href="http://anjalig.github.io/"/>
-  <updated>2013-06-21T13:52:31+05:30</updated>
+  <updated>2013-06-21T14:01:01+05:30</updated>
   <id>http://anjalig.github.io/</id>
   <author>
     <name><![CDATA[Anjali]]></name>
@@ -25,13 +25,11 @@ apart from the sender and intended recipient suspects the existence of the messa
 Example of Steganography we are going to try is &lsquo;Hidding a folder behind an image&rsquo;.
 Follow the steps below and you will learn a technique of steganography:</p>
 
-<pre><code> Create a folder containing all your secret files in it.
-    Here, the following things are needed :-
--A folder containing all your secret files: here, 'hide' is the folder .
--An image to hide the folder: here, image.jpg is the image used. 
-</code></pre>
-
 <ol>
+<li>Create a folder containing all your secret files in it.</li>
+<li>Here, the following things are needed :&ndash;
+ -A folder containing all your secret files: here, &lsquo;hide&rsquo; is the folder .
+ -An image to hide the folder: here, image.jpg is the image used.</li>
 <li>Create a zip archive of the folder. In linux use the following to zip a folder :</li>
 </ol>
 
