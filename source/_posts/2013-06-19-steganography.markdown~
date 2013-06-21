@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-{% img /images/images.jpeg %}
+{% img https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkZlLGh1eMQTQwZ9dvr0zGRtOk6pMYhxmuuy11TkK_y9EwryBN %}
 
 Steganography is the art and science of writing hiden messages in such a way that no one, 
 apart from the sender and intended recipient suspects the existence of the message. 
@@ -35,3 +35,4 @@ Follow the steps below and you will learn a technique of steganography:
 	unzip final.jpg
 	{% endcodeblock %}
 
+The advantage of steganography over cryptography alone is that messages do not attract attention to themselves. Plainly visible encrypted messages—no matter how unbreakable—will arouse suspicion, and may in themselves be incriminating in countries where encryption is illegal. Therefore, whereas cryptography protects the contents of a message, steganography can be said to protect both messages and communicating parties.
