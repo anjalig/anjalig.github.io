@@ -9,8 +9,8 @@
   <meta name="author" content="Anjali">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="Steganography is the art and science of writing hiden messages in such a way that no one,
+apart from the sender and intended recipient suspects the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,7 +91,50 @@
   </header>
 
 
-<div class="entry-content"><p><img src="/images/images.jpeg"></p>
+<div class="entry-content"><p><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkZlLGh1eMQTQwZ9dvr0zGRtOk6pMYhxmuuy11TkK_y9EwryBN"></p>
+
+<p>Steganography is the art and science of writing hiden messages in such a way that no one,
+apart from the sender and intended recipient suspects the existence of the message.
+Example of Steganography we are going to try is &lsquo;Hidding a folder behind an image&rsquo;.
+Follow the steps below and you will learn a technique of steganography:</p>
+
+<ol>
+<li>Create a folder containing all your secret files in it.</li>
+<li>Here, the following things are needed :&ndash;
+ -A folder containing all your secret files: here, &lsquo;hide&rsquo; is the folder .
+ -An image to hide the folder: here, image.jpg is the image used.</li>
+<li>Create a zip archive of the folder. In linux use the following to zip a folder :</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>zip -r hide.zip hide</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now we will use the linux command &lsquo;cat&rsquo; which is used to for different purposes
+ -displaying contents of file. <br/>
+ -creating new files.
+ -combining copies of files.</li>
+<li>The &lsquo;cat&rsquo; command will read the image file first, then &lsquo;hide.zip&rsquo; and will concatenate them together, and redirect the output in a file &lsquo;final.jpg&rsquo;.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cat image.jpg hide.zip > final.jpg</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Now, the file &lsquo;final.jpg&rsquo; will contain your secret folder but it would appear as an image to anyone unknown to this technique.</li>
+<li>To see the hidden folder behind the image:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>unzip final.jpg</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The advantage of steganography over cryptography alone is that messages do not attract attention to themselves. Plainly visible encrypted messages—no matter how unbreakable—will arouse suspicion, and may in themselves be incriminating in countries where encryption is illegal. Therefore, whereas cryptography protects the contents of a message, steganography can be said to protect both messages and communicating parties.</p>
 </div>
 
 
