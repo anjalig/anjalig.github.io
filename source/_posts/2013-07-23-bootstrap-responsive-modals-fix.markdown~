@@ -1,0 +1,50 @@
+---
+layout: post
+title: "Bootstrap Responsive Modals Fix"
+date: 2013-07-23 21:51
+comments: true
+categories: 
+---
+
+{%blockquote How to make Bootstrap Modals Responsive %}
+{%endblockquote %}
+
+Bootstrap Modals are not responsive by default, to make them responsive follow the steps below which includes changing the CSS files in the bootstrap library:
+
+1. In the file bootstrap-responsive.css change/add the following:
+	Changed the positioning from absolute to fixed (or really, deleted the positioning variable altogether, as the main CSS file already 		specifies the positioning as fixed).
+
+	Changed the top, left and right positions from pixels to percentages.
+
+	Added a bottom position. This is required to keep the modal-footer from expanding beyond the screen on modals with long blocks of 		text. Because of the fixed positioning, it will never be visible in those instances.
+
+	Added a body height of 60%. This also prevents the modal-footer from being pushed out of view on longer blocks of text, and enables 		overflow-y scrolling.
+
+{% codeblock %}
+.modal {
+position: fixed;
+top: 3%;
+right: 3%;
+left: 3%;
+bottom: 3%;
+width: auto;
+margin: 0;
+}
+.modal-body {
+height: 60%;
+}
+{% endcodeblock %}
+
+
+2. In the file bootstrap.css change/add the following:
+	Added -webkit-overflow-scrolling: touch to the modal-body.
+
+{% codeblock %}
+.modal-body {
+max-height: 350px;
+padding: 15px;
+overflow-y: auto;
+-webkit-overflow-scrolling: touch;
+}
+{% endcodeblock %}
+
