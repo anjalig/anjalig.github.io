@@ -47,4 +47,6 @@ overflow-y: auto;
 -webkit-overflow-scrolling: touch;
 }
 {% endcodeblock %}
+3. Include the above two files in the 'head' section of the code.
 
+DONE!!!! enjoy Responsive Bootstrap Modals.

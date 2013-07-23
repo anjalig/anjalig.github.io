@@ -12,13 +12,13 @@ categories:
 Bootstrap Modals are not responsive by default, to make them responsive follow the steps below which includes changing the CSS files in the bootstrap library:
 
 1. In the file bootstrap-responsive.css change/add the following:
-	Changed the positioning from absolute to fixed (or really, deleted the positioning variable altogether, as the main CSS file already 		specifies the positioning as fixed).
+	Change the positioning from absolute to fixed (or really, deleted the positioning variable altogether, as the main CSS file already 		specifies the positioning as fixed).
 
-	Changed the top, left and right positions from pixels to percentages.
+	Change the top, left and right positions from pixels to percentages.
 
-	Added a bottom position. This is required to keep the modal-footer from expanding beyond the screen on modals with long blocks of 		text. Because of the fixed positioning, it will never be visible in those instances.
+	Add a bottom position. This is required to keep the modal-footer from expanding beyond the screen on modals with long blocks of 	text. Because of the fixed positioning, it will never be visible in those instances.
 
-	Added a body height of 60%. This also prevents the modal-footer from being pushed out of view on longer blocks of text, and enables 		overflow-y scrolling.
+	Add a body height of 60%. This also prevents the modal-footer from being pushed out of view on longer blocks of text, and enables 		overflow-y scrolling.
 
 {% codeblock %}
 .modal {
@@ -37,7 +37,7 @@ height: 60%;
 
 
 2. In the file bootstrap.css change/add the following:
-	Added -webkit-overflow-scrolling: touch to the modal-body.
+	Add -webkit-overflow-scrolling: touch to the modal-body.
 
 {% codeblock %}
 .modal-body {
@@ -47,6 +47,6 @@ overflow-y: auto;
 -webkit-overflow-scrolling: touch;
 }
 {% endcodeblock %}
-3. Include the above two files in the <head> tag of the code.
+3. Include the above two files in the 'head' section of the code.
 
 DONE!!!! enjoy Responsive Bootstrap Modals.
