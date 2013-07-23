@@ -4,7 +4,7 @@
   <title><![CDATA[DECRYPTING IDEAS]]></title>
   <link href="http://anjalig.github.io/atom.xml" rel="self"/>
   <link href="http://anjalig.github.io/"/>
-  <updated>2013-06-21T14:12:26+05:30</updated>
+  <updated>2013-07-23T22:06:13+05:30</updated>
   <id>http://anjalig.github.io/</id>
   <author>
     <name><![CDATA[Anjali]]></name>
@@ -12,6 +12,83 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Bootstrap Responsive Modals Fix]]></title>
+    <link href="http://anjalig.github.io/blog/2013/07/23/bootstrap-responsive-modals-fix/"/>
+    <updated>2013-07-23T21:51:00+05:30</updated>
+    <id>http://anjalig.github.io/blog/2013/07/23/bootstrap-responsive-modals-fix</id>
+    <content type="html"><![CDATA[<blockquote><p></p><footer><strong>How to make Bootstrap Modals Responsive</strong></footer></blockquote>
+
+
+<p>Bootstrap Modals are not responsive by default, to make them responsive follow the steps below which includes changing the CSS files in the bootstrap library:</p>
+
+<ol>
+<li><p>In the file bootstrap-responsive.css change/add the following:
+ Changed the positioning from absolute to fixed (or really, deleted the positioning variable altogether, as the main CSS file already        specifies the positioning as fixed).</p>
+
+<p> Changed the top, left and right positions from pixels to percentages.</p>
+
+<p> Added a bottom position. This is required to keep the modal-footer from expanding beyond the screen on modals with long blocks of       text. Because of the fixed positioning, it will never be visible in those instances.</p>
+
+<p> Added a body height of 60%. This also prevents the modal-footer from being pushed out of view on longer blocks of text, and enables         overflow-y scrolling.</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>.modal {
+</span><span class='line'>position: fixed;
+</span><span class='line'>top: 3%;
+</span><span class='line'>right: 3%;
+</span><span class='line'>left: 3%;
+</span><span class='line'>bottom: 3%;
+</span><span class='line'>width: auto;
+</span><span class='line'>margin: 0;
+</span><span class='line'>}
+</span><span class='line'>.modal-body {
+</span><span class='line'>height: 60%;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>In the file bootstrap.css change/add the following:
+ Added -webkit-overflow-scrolling: touch to the modal-body.</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>.modal-body {
+</span><span class='line'>max-height: 350px;
+</span><span class='line'>padding: 15px;
+</span><span class='line'>overflow-y: auto;
+</span><span class='line'>-webkit-overflow-scrolling: touch;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>Include the above two files in the <head> tag of the code.</li>
+</ol>
+
+
+<p>DONE!!!! enjoy Responsive Bootstrap Modals.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Steganography]]></title>
